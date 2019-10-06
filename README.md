@@ -1,2 +1,6 @@
 # ACIM-5030-Project
 BCIT ACIM 5030 Conveyor Belt Project
+
+Using the Allen Bradley 1769-L61 CompactLogix controller, Powerflex 70 Variable Frequency Drive and PanelPlus 1000 HMI a conveyor was controlled to sort through four different sizes of lumber and place them into their designated bins. The belt will primarily be controlled via an HMI application, but push buttons located on the front door panel of the enclosure also preformed as secondary controls.
+
+The project operated in either automatic or manual mode. In automatic mode the conveyor would run at 75 Hz, then once a piece of lumber reached one of the photoeyes, it slowed the belt down to 16 Hz. Once the lumber reached the second photoeye, an incremental encoder would measure its size. The belt would immediately speed up to 75 Hz and one of the four solenoids would actuate and kick out the block according to its measured size. While holding down the manual mode button, a joystick provided forward/reversing capabilities. The HMI also provided a slider to provide manual speed control. Graphics on the HMI became visible whenever either photoeye, or any of the four solenoids were activated. There are also HMI buttons to manually kick the solenoids while in manual mode. Conveyor speed and system air pressure are displayed too.
